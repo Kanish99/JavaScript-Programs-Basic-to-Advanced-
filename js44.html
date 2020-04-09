@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function f1()
+{
+	var a=document.getElementById("password").value;
+	var b=document.getElementById("confirmpassword").value;
+	if(password!=confirmpassword)
+	{
+		alert("Plzz check ur password");
+	}
+	else
+	{
+		document.write("you have moved to next page");
+	}
+}
+</script>
+<b>Password</b>
+<input type="password" name="pwd" size="15" id="password">
+<b>Confirm Password</b>
+<input type="password" name="pwd" size="15" id="confirmpassword">
+<input type="Submit" onclick="f1()">
+</body>
+</html>

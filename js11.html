@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Palindrome</title>
+</head>
+<body>
+<script type="text/javascript">
+	var m,r;
+	var c=121
+	var ans=0;
+	m=c;
+	while(c!=0)
+	{
+		r=c%10;
+		ans=(ans*10)+r;
+		c=parseInt(c/10);
+	}
+	document.write("ans is :"+ans);
+	if(m==ans)
+	{
+		document.write("<br>No is Palindrome")
+	}
+	else
+	{
+		document.write("<br>No is  not Palindrome")
+	}
+</script>
+</body>
+</html>

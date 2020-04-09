@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+		function add()
+		{	
+			var a;
+			var b;
+			var a=document.getElementById("first no").value;
+			var b=document.getElementById("second no").value;
+			var c;
+			c=parseInt(a)+parseInt(b);
+			document.write("c is"+c);
+		}
+		function sub()
+		{
+			var a;
+			var b;
+			var a=document.getElementById("first no").value;
+			var b=document.getElementById("second no").value;
+			var d;
+			d=a-b;
+			document.write("d is"+d);
+		}
+		function mult()
+		{
+			var a;
+			var b;
+			var a=document.getElementById("first no").value;
+			var b=document.getElementById("second no").value;
+			var e;
+			e=parseInt(a)*parseInt(b);
+			document.write("e is"+e);
+		}
+		function div()
+		{
+			var a;
+			var b;
+			var a=document.getElementById("first no").value;
+			var b=document.getElementById("second no").value;
+			var f;
+			f=a/b;
+			document.write("f is"+f);
+		}
+	</script>
+</head>
+<body>
+<form id="form">
+	<p>Enter first no</p>
+	<input type="text" name="first no" id="first no"/>
+	<br>
+	<p>Enter second no</p>
+	<input type="text" name="second no" id="second no"/>
+	<br>
+	<input type="button" value="Addition" onclick="add()"/>
+	<input type="button" value="Subtraction" onclick="sub()"/>
+	<input type="button" value="Multiplication" onclick="mult()"/>
+	<input type="button" value="Division" onclick="div()"/>
+</form>
+</body>
+</html>

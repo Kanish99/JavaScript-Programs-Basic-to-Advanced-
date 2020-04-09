@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+	function f1()
+	{
+		var a=new Date("26/08/1193");
+		var b=new Date("27/09/2017");
+		
+		var c=a.getTime()-b.getTime();
+		document.write("c is:"+c);
+
+		
+	}
+
+	
+	</script>
+</head>
+<body>
+<form>
+	<p>Enter ur bday</p>
+	<input type="date" id="abc"><br>
+	<p>Enter current date</p>
+	<input type="date" id="def"><br>
+	
+	<input type="button" value="Submit" onclick="f1()">
+</form>
+</body>
+</html>

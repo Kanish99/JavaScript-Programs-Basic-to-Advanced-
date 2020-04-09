@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function ab()
+		{
+			document.write("hello");
+			var a=document.getElementById("username").value;
+			var b=document.getElementById("pass").value;
+			document.write("value of a is:"+a);
+			document.write("value of b is:"+b);
+			/*if(a==null || b==null)
+			{
+				alert("Plzz enter name and password");
+			}
+			else
+			{
+				document.write("u have moved to next page");
+			}*/
+		}
+	</script>
+</head>
+<body>
+<form>
+	<p>Enter name</p>
+	<input type="text" name="username">
+	<p>Password</p>
+	<input type="password" name="pass">
+	<input type="button" value="Submit" onclick="ab()">
+</form>
+</body>
+</html>

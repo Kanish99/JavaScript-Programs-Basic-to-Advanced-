@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sorting</title>
+</head>
+<body>
+<script type="text/javascript">
+	var i,j,t;
+	var x = new Array();  
+	x[0] = 5;  
+	x[1] = 10;  
+	x[2] = 15;  
+  
+	for(i=0;i<3;i++)
+	{
+		for (j=0;j<3;j++) 
+		
+		{
+			if(x[i]>x[j])
+			{
+				t=x[i];
+				x[i]=x[j];
+				x[j]=t;
+			}
+		}
+		
+	}
+	for(i=0;i<3;i++)
+	{
+		document.write("values are"+x[i]);
+	}
+
+
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			if(x[i]<x[j])
+			{
+				t=x[i];
+				x[i]=x[j];
+				x[j]=t;
+			}
+		}
+	}
+		for(i=0;i<3;i++)
+	{
+		document.write("values are"+x[i]);
+	}
+</script>
+</body>
+</html>

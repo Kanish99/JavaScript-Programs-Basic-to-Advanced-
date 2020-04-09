@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Largest and smallest string</title>
+</head>
+<body>
+<script type="text/javascript">
+	var emp=new Array();
+	var i,l,m;
+	size=3;
+	emp[0] = 5;  
+	emp[1] = 10;  
+	emp[2] = 15;
+	for (i=0;i<emp.length;i++)
+	{  
+		document.write(emp[i] + "<br>");  
+	}   
+	l=emp[0];
+	for(i=1;i<size;i++)
+	{
+		if(l<emp[i])
+		l=emp[i];
+	} 
+	document.write("largest element is:"+l);
+	m=emp[0];
+	for(i=1;i<size;i++)
+	{
+		if(m>emp[i])
+		m=emp[i];
+	} 
+	document.write("<br>smallest element is:"+m);
+</script>
+</body>
+</html>

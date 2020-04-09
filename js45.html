@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validation form</title>
+	<script type="text/javascript">
+		function validation()
+		{
+			var a=document.form12.name.value;
+			var b=document.form12.password.value;
+			//var a=document.getElementById("name").value;
+			document.write("value of a is:"+a);
+			//var b=document.getElementById("password").value;
+			document.write("value of b is:"+b);
+			if(a==null || a==" ")
+			{
+				alert("plzz enter username and password");
+			}
+			else if(b.length==0 && b.length<6 && b.length>12)
+			{
+				alert("Plzz check length of password");
+			}
+			else
+			{
+				document.write("You can proceed further");
+			}
+		}
+	</script>
+</head>
+<body>
+<form name="form12" method="post" >
+	<b>Name:</b>
+	<input type="text" name="name" maxlength="20" size="25"><br>
+	<b>Password:</b>
+	<input type="password" name="password" maxlength="15" size="20"><br>
+	<input type="submit" value="Submit" onclick="validation()">
+</form>
+</body>
+</html>

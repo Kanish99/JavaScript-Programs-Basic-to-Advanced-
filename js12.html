@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Krishnamurthy no.</title>
+</head>
+<body>
+<script type="text/javascript">
+	var m,i,j;
+	var ans=0;
+	var r;
+	var c=145;
+	for(i=c;i>0;i=parseInt(i/10))
+	{
+		
+		t=i%10;
+		r=1;
+		for(j=1;j<=t;j++)
+		{
+			r=r*j;
+			document.write("r is:"+r+"<br>");
+		}
+		ans=ans+r;
+		document.write("ans is:<br>"+ans);
+	}
+	if(c==ans)
+	{
+		document.write("<br>No is Krishnamurthy");
+	}
+	else
+	{
+		document.write("<br>No is not Krishnamurthy");
+	}
+</script>
+</body>
+</html>

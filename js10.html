@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Armstrong no</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var c,m,r,ans=0;
+		c=153;
+		m=c;
+		while(c!=0)
+		{
+			r=c%10;
+			ans=ans+(r*r*r);
+			c=parseInt(c/10);
+		}
+		document.write("ans is:"+ans);
+		if(m==ans)
+		{
+			document.write("<br>no is armstrong");
+		}
+		else
+		{
+			document.write("<br>no is not armstrong");
+		}
+	</script>
+</body>
+</html>
